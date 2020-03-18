@@ -26,47 +26,47 @@ An example file can be found [here](example/example.dart)
 Expanding button takes in the following parameters:
 
 ####    1. child (Type Widget) (@required)
-    ```dart
-        ExpandingButton(child: Text('This can be any widget'));
-    ```
+```dart
+    ExpandingButton(child: Text('This can be any widget'));
+```
 
 ####    2. onTap (Type VoidCallBack)
-    ```dart
-        ExpandingButton(
-            child: Text('This can be any widget'),
-            onTap: () {
-                print('This can be any voidcallback which is called on tapping');
-            }
-        );
-    ```
+```dart
+    ExpandingButton(
+        child: Text('This can be any widget'),
+        onTap: () {
+            print('This can be any voidcallback which is called on tapping');
+        }
+    );
+```
 
 ####    3. onTapWhenExpanded (Type VoidCallBack)
-    ```dart
-        ExpandingButton(
-            child: Text('This can be any widget'),
-            onTap: () {
-                print('This can be any voidcallback which is called on tapping when button is expanded');
-            }
-        );
-    ```
+```dart
+    ExpandingButton(
+        child: Text('This can be any widget'),
+        onTap: () {
+            print('This can be any voidcallback which is called on tapping when button is expanded');
+        }
+    );
+```
 
 ####    4. background (Type Color)
-    ```dart
-        ExpandingButton(
-            child: Text('This can be any widget'),
-            // This is the background color of button in non-expanded state        
-            background: Colors.blue
-        );
-    ```
+```dart
+    ExpandingButton(
+        child: Text('This can be any widget'),
+        // This is the background color of button in non-expanded state        
+        background: Colors.blue
+    );
+```
 
 ####    5. backgroundAfterAnimation (Type Color)
-    ```dart
-        ExpandingButton(
-            child: Text('This can be any widget'),
-            // This is the background color of button in expanded state        
-            backgroundAfterAnimation: Colors.greenAccent
-        );
-    ```
+```dart
+    ExpandingButton(
+        child: Text('This can be any widget'),
+        // This is the background color of button in expanded state        
+        backgroundAfterAnimation: Colors.greenAccent
+    );
+```
 
 ## License
 
