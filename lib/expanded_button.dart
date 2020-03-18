@@ -7,7 +7,8 @@ class ExpandedButton extends StatefulWidget {
   final Widget child;
   final VoidCallback onTap;
 
-  ExpandedButton(this.child, this.initialBackground, this.finalBackground, {this.onTap});
+  ExpandedButton(this.child, this.initialBackground, this.finalBackground,
+      {this.onTap});
   @override
   _ExpandedButtonState createState() => _ExpandedButtonState();
 }
@@ -24,7 +25,9 @@ class _ExpandedButtonState extends State<ExpandedButton>
     _backgroundColor =
         ColorTween(begin: widget.initialBackground, end: widget.finalBackground)
             .animate(_controller);
-    _backgroundColor.addListener(() {setState(() {});});
+    _backgroundColor.addListener(() {
+      setState(() {});
+    });
     _controller.forward();
     super.initState();
   }
@@ -36,13 +39,16 @@ class _ExpandedButtonState extends State<ExpandedButton>
       child: Material(
           color: _backgroundColor.value,
           child: InkWell(
-            onTap: () {widget.onTap(); Navigator.pop(context);},
-            child: Center(child: Padding(
+            onTap: () {
+              widget.onTap();
+              Navigator.pop(context);
+            },
+            child: Center(
+                child: Padding(
               padding: const EdgeInsets.all(12.0),
               child: widget.child,
             )),
-          )
-      ),
+          )),
     );
   }
 }

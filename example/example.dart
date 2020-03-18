@@ -17,10 +17,15 @@ class _ExampleState extends State<Example> {
         child: Center(
           // Using the Expanding Button
           child: ExpandingButton(
+            // child <Widget>
             child: Text('Finesse', style: TextStyle(color: Colors.white)),
+            // onTap <VoidCallback>
             onTap: () {print('expand');},
+            // onTapWhenExpanded <VoidCallback>
             onTapWhenExpanded: () {print('collapse');},
+            // background <Color>
             background: Colors.blue,
+            // backgroundAfterAnimation <Color>
             backgroundAfterAnimation: Colors.greenAccent,
           ),
         ),

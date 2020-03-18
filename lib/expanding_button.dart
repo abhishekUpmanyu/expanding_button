@@ -12,10 +12,10 @@ class ExpandingButton extends StatefulWidget {
 
   ExpandingButton(
       {@required this.child,
-        this.onTap,
-        this.onTapWhenExpanded,
-        this.background = Colors.white,
-        this.backgroundAfterAnimation = Colors.white});
+      this.onTap,
+      this.onTapWhenExpanded,
+      this.background = Colors.white,
+      this.backgroundAfterAnimation = Colors.white});
 
   @override
   _ExpandingButtonState createState() => _ExpandingButtonState();
@@ -33,8 +33,12 @@ class _ExpandingButtonState extends State<ExpandingButton> {
                 widget.onTap();
                 Navigator.of(context).push(PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        ExpandedButton(widget.child, widget.background,
-                          widget.backgroundAfterAnimation, onTap: widget.onTapWhenExpanded,)));
+                        ExpandedButton(
+                          widget.child,
+                          widget.background,
+                          widget.backgroundAfterAnimation,
+                          onTap: widget.onTapWhenExpanded,
+                        )));
               },
               child: Padding(
                 padding: const EdgeInsets.all(12.0),

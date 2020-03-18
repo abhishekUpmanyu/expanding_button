@@ -1,6 +1,6 @@
 name: expanding_button
 description: An animated button that expands and changes colour on clicking
-version: 0.0.1
+version: 1.0.0
 authors:
   - Abhishek Upmanyu <abhi.rock2611@gmail.com>
 homepage: https://github.com/abhishekUpmanyu/expanding_button
