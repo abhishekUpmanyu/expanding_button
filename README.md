@@ -4,7 +4,7 @@ A Flutter package containing an animated button that expands without causing ove
 
 ## Screenshot
 
-<img src="screenshot/animation.gif" height="600em" />
+![image](https://raw.githubusercontent.com/abhishekUpmanyu/expanding_button/master/screenshot/animation.gif)
 
 ### Do :star: the repo if you like it!
 
