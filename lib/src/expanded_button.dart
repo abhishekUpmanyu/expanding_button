@@ -5,9 +5,10 @@ class ExpandedButton extends StatefulWidget {
   final Color initialBackground;
   final Color finalBackground;
   final Widget child;
+  final String tag;
   final VoidCallback onTap;
 
-  ExpandedButton(this.child, this.initialBackground, this.finalBackground,
+  ExpandedButton(this.child, this.tag, this.initialBackground, this.finalBackground,
       {this.onTap});
   @override
   _ExpandedButtonState createState() => _ExpandedButtonState();
@@ -35,7 +36,7 @@ class _ExpandedButtonState extends State<ExpandedButton>
   @override
   Widget build(BuildContext context) {
     return Hero(
-      tag: 'button',
+      tag: widget.tag,
       child: Material(
           color: _backgroundColor.value,
           child: InkWell(

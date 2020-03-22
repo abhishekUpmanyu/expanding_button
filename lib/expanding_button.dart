@@ -1,10 +1,11 @@
 library expanding_button;
 
-import 'package:expanding_button/expanded_button.dart';
+import 'src/expanded_button.dart';
 import 'package:flutter/material.dart';
 
 class ExpandingButton extends StatefulWidget {
   final Widget child;
+  final String tag;
   final VoidCallback onTap;
   final VoidCallback onTapWhenExpanded;
   final Color background;
@@ -12,6 +13,7 @@ class ExpandingButton extends StatefulWidget {
 
   ExpandingButton(
       {@required this.child,
+        @required this.tag,
       this.onTap,
       this.onTapWhenExpanded,
       this.background = Colors.white,
@@ -25,7 +27,7 @@ class _ExpandingButtonState extends State<ExpandingButton> {
   @override
   Widget build(BuildContext context) {
     return Hero(
-      tag: 'button',
+      tag: widget.tag,
       child: Material(
           color: widget.background,
           child: InkWell(
