@@ -8,8 +8,10 @@ class ExpandedButton extends StatefulWidget {
   final String tag;
   final VoidCallback onTap;
 
-  ExpandedButton(this.child, this.tag, this.initialBackground, this.finalBackground,
+  ExpandedButton(
+      this.child, this.tag, this.initialBackground, this.finalBackground,
       {this.onTap});
+
   @override
   _ExpandedButtonState createState() => _ExpandedButtonState();
 }
@@ -46,9 +48,9 @@ class _ExpandedButtonState extends State<ExpandedButton>
             },
             child: Center(
                 child: Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: widget.child,
-            )),
+                  padding: const EdgeInsets.all(12.0),
+                  child: widget.child,
+                )),
           )),
     );
   }

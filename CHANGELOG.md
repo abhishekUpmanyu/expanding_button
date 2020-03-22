@@ -1,3 +1,7 @@
+## [1.0.2] - 22 March 2020
+
+* Fixed a major error.
+
 ## [1.0.1] - 22 March 2020
 
 * Fixed a major issue where adding more than one expanding button would throw an error.

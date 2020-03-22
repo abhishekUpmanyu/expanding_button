@@ -37,6 +37,7 @@ class _ExpandingButtonState extends State<ExpandingButton> {
                     pageBuilder: (context, animation1, animation2) =>
                         ExpandedButton(
                           widget.child,
+                          widget.tag,
                           widget.background,
                           widget.backgroundAfterAnimation,
                           onTap: widget.onTapWhenExpanded,
